@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --primary-color: #b90415;
+  --primary-color-hover: #d3071b;
+  --secondary-color: #103063;
+  --secondary-color-hover: #143f85;
+  --light-color: #f4f4f4;
+}
+
+a{
+  text-decoration: none;
+  color: #ccc;
+}
+
+body {
+    font-family: 'PT Sans ', sans-serif;
+    background-color: #252529;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    line-height: 1.6;
+  }
+
+  .logo img{
+    float: left;
+    width: 1.2cm;
+    margin-left:10px ;
+  }
+  
+.head{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.container{
+    width: 1200px;
+    margin: 1rem auto;
+    columns: 4;
+    column-gap: 40px;
+}
+
+.container .box{
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 10px;
+    background: #fff;
+    overflow: hidden;
+    break-inside: avoid;
+}
+
+.container .box img{
+    max-width: 100%;
+}
+
+.container .box h2{
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.container .box p{
+    margin: 0;
+    padding: 0 0 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Showcase */
+#showcase{
+    position: relative;
+    overflow-y: hidden;
+}
+
+#showcase .container{
+  margin-top: 15vh;
+}
+
+/* Utility */
+
+
+.lead{
+  font-size: 1.3rem;
+}
+
+.mb{
+  margin-bottom: 1rem;
+}
+
+.mt{
+  margin-top: 1rem;
+}
+
+.btn{
+  padding: 1rem;
+  color: #fff;
+  display: inline-block;
+}
+
+.btn-primary{
+  background: var(--primary-color);
+}
+
+.btn-primary:hover{
+  background: var(--primary-color-hover);
+}
+
+/* text colors */
+.text-primary{
+  color: var(--primary-color);
+}
+/* footer */
+.page-footer{
+  background-color: var(--primary-color);
+  margin-top: 1rem;
+}
+
+.footer-copyright{
+  padding: 1em;
+}
+
+/* nav */
+  nav {
+    height: 45px;
+    width: 100%;
+    background-color: #333;
+    background-blend-mode: screen;
+    color: #eee;
+    position: fixed;
+  }
+  nav ul {
+    padding: 0;
+    margin: 0;
+  }
+  nav li {
+    display: inline;
+    float: left;
+  }
+  nav a {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+    color: #eee;
+    text-decoration: none;
+  }
+  nav li:hover {
+    background-color: #444;
+  }
+  nav a#openup {
+    display: none;
+  }
+
+@media (max-width: 1200px){
+
+    .head{
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    .container{
+        columns: 3;
+        width: calc(100% - 40px);
+        box-sizing: border-box;
+        padding: 20px 20px 20px 0;
+    }
+}
+
+@media (max-width: 768px){
+    .head{
+        text-align: center;
+        margin-top: 3rem;
+    }
+    .container{
+        margin: 1rem auto;
+        columns: 2;
+    }
+}
+
+@media (max-width: 480px){
+    .head{
+        text-align: center;
+        margin-top: auto;
+    }
+    .container{
+        margin: 0.5rem auto;
+        columns: 1;
+    }
+}
+  
+
+
+  @media screen and (max-width: 580px) {
+
+    .hide-on-small{
+      display: none;
+    }
+
+    #showcase{
+      height: 50vh;
+    }
+
+    #showcase .container{
+      margin-top: 15vh;
+    }
+
+    #showcase h1{
+      font-size: 3rem;
+    }
+
+    #showcase h2{
+      font-size: 1.5rem;
+    }
+    nav {
+      height: auto;
+      border-bottom: 0;
+    }
+    nav ul {
+      display: none;
+      height: auto;
+    }
+    nav li {
+      width: 100%;
+      float: left;
+      position: relative;
+    }
+    nav a {
+      text-align: left;
+      width: 100%;
+      text-indent: 25px;
+      background: #333;
+      border-bottom: 1px solid #555;
+    }
+    nav a:hover {
+      background: #444;
+    }
+    nav a#openup:after {
+      content: "|||";
+      transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      /* IE 9 */
+      -webkit-transform: rotate(-90deg);
+      /* Safari and Chrome */
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      position: absolute;
+      right: 5px;
+      top: 20px;
+    }
+    nav a#openup {
+      display: block;
+      background-color: #333;
+      width: 100%;
+      position: relative;
+    }
+  }
+  .cf:before, .cf:after {
+    content: "";
+    display: table;
+  }
+  
+  .cf:after {
+    clear: both;
+  }
+  
+  .cf {
+    zoom: 1;
+  }
+
+  * {box-sizing:border-box}
+
+
